@@ -1,0 +1,5 @@
+package singleton
+
+func init() {
+
+}
