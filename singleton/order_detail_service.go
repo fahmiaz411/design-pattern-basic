@@ -5,11 +5,11 @@ import (
 	"log"
 )
 
-type OrderServiceDetail struct {
+type OrderDetailService struct {
 	DB *sql.DB
 }
 
-func (s *OrderServiceDetail) Save() {
+func (s *OrderDetailService) Save(id, product string) {
 	_, err := s.DB.Exec("INSERT INTO orders ...")
 	if err != nil {
 		log.Println(err)
