@@ -4,7 +4,7 @@ package singleton
 // This singleton use 1 connection to handle all
 // of its query
 func init() {
-	db := connect("localhost", "root", "1234")
+	db := Connect("localhost", "root", "1234")
 
 	orderService := &OrderService{DB: db}
 	orderService.Save("0001")
